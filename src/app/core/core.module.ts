@@ -4,11 +4,10 @@ import { RouterModule } from '@angular/router';
 import { MenuComponent } from './menu/menu.component';
 import { throwIfAlreadyLoaded } from './_guards/module-import-guards';
 import { ExternalLinksComponent } from './external-links/external-links.component';
-import { NotFoundComponent } from './not-found/not-found.component';
 import { NavigationLinksComponent } from './navigation-links/navigation-links.component';
 
 @NgModule({
-  declarations: [MenuComponent, ExternalLinksComponent, NotFoundComponent, NavigationLinksComponent],
+  declarations: [MenuComponent, ExternalLinksComponent, NavigationLinksComponent],
   imports: [CommonModule, RouterModule],
   exports: [MenuComponent, ExternalLinksComponent, NavigationLinksComponent]
 })

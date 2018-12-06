@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CosmicService } from '../_services/cosmic.service';
-import { ExternalLink } from '../model';
+import { ExternalLink } from '../_model';
 
 @Component({
   selector: 'app-external-links',

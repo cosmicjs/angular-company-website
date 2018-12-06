@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Navigation } from '../model';
+import { Navigation } from '../_model';
 import { CosmicService } from '../_services/cosmic.service';
 
 @Component({

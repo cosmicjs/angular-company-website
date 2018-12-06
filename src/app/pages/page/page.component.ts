@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { CosmicService } from 'src/app/core/_services/cosmic.service'; // Proper import of a module??
-import { Page } from 'src/app/core/model'; // Proper import of a module??
 import { EMPTY } from 'rxjs';
 import { map, switchMap } from 'rxjs/operators';
+import { CosmicService } from 'src/app/core';
+import { Page } from 'src/app/core/_model';
 
 @Component({
   selector: 'app-page',
