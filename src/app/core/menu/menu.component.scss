@@ -1,0 +1,19 @@
+@import "../../../styles/variables.scss";
+
+// Override Bulma
+
+.navbar-menu {
+  a.navbar-item, a.navbar-link {
+    &.is-active {
+      background-color: inherit !important;
+      border-bottom: 1px solid $secondary;
+    }
+  }
+
+  &:not(.isactive) {
+    .navbar-dropdown.is-transparent {
+      background-color: inherit;
+      border-top: none;
+    }
+  }
+}

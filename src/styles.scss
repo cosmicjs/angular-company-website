@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+@charset "utf-8";
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+// Variable override for Bulma
+@import "styles/variables.scss";
+
+// Import Bulma
+@import "../node_modules/bulma/bulma.sass";
+
+

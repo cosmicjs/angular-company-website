@@ -1,0 +1,39 @@
+<nav class="navbar is-black" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" [routerLink]="['/']">
+      <img src={{logo}}>
+    </a>
+
+    <a role="button" class="navbar-burger burger" [ngClass]="{ 'is-active' : isMenuActive }" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" (click)="toggleMenu()">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div *ngIf="navigation" class="navbar-menu" [ngClass]="{ 'is-active' : isMenuActive }">
+    <div class="navbar-start">
+      <ng-container *ngFor="let page of navigation.pages">
+        <ng-container *ngIf="page.related.length > 0; then navbarDropdown; else navbarLink">
+        </ng-container>
+
+        <ng-template #navbarDropdown>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" [routerLink]="['/', page.slug]" routerLinkActive="is-active">{{page.title}}</a>
+
+                <div class="navbar-dropdown is-transparent">
+                  <ng-container *ngFor="let related of page.related">
+                    <a class="navbar-item" [routerLink]="['/', related.slug]">{{related.title}}</a>
+                  </ng-container>
+                </div>
+              </div>
+        </ng-template>
+
+        <ng-template #navbarLink>
+          <a class="navbar-item" [routerLink]="['/', page.slug]" routerLinkActive="is-active">{{page.title}}</a>
+        </ng-template>
+
+      </ng-container>
+    </div>
+  </div>
+</nav>

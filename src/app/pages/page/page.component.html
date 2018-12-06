@@ -1,0 +1,26 @@
+<ng-container *ngIf="page">
+  <section class="hero is-primary is-medium" [ngStyle]="setBackground()">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title">
+          {{page.title}}
+        </h1>
+      </div>
+    </div>
+    <ng-container *ngIf="page.related">
+    <div class="hero-foot">
+      <nav class="tabs is-fullwidth">
+        <div class="container">
+          <ul>
+            <li *ngFor="let page of page.related"><a [routerLink]="['/', page.slug]">{{page.title}}</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    </ng-container>
+  </section>
+  <section class="section">
+    <div class="container"[innerHTML]="page.content">
+    </div>
+  </section>
+</ng-container>

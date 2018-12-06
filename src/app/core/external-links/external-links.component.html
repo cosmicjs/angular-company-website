@@ -1,0 +1,14 @@
+<ul *ngIf="links">
+  <li *ngFor="let link of links">
+    <a href="{{link.url}}">
+      <span class="image is-16x16">
+        <ng-container *ngIf="link.icon">
+          <img src="{{link.icon}}"/>
+        </ng-container>
+      </span>
+      <span class="link-text">
+        {{link.title}}
+      </span>
+    </a>
+  </li>
+</ul>

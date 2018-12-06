@@ -1,0 +1,7 @@
+<ul *ngIf="navigation">
+  <li *ngFor="let page of navigation.pages">
+    <a [routerLink]="['/', page.slug]">
+      {{page.title}}
+    </a>
+  </li>
+</ul>
