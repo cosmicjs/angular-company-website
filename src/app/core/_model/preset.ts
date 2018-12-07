@@ -5,6 +5,7 @@ export class Preset {
   _id: string;
   companyName: string;
   companyLogoUrl: string;
+  faviconUrl: string;
   footerNavigation: Navigation;
   homepage: Page;
   mainNavigation: Navigation;
@@ -15,6 +16,7 @@ export class Preset {
     this._id = obj._id;
     this.companyName = obj.metadata.company_name;
     this.companyLogoUrl = obj.metadata.company_logo ? obj.metadata.company_logo.url : '';
+    this.faviconUrl = obj.metadata.favicon ? obj.metadata.favicon.url : '';
     this.homepage = new Page(obj.metadata.homepage);
     this.mainNavigation = new Navigation(obj.metadata.main_navigation);
     this.slug = obj.slug;
