@@ -6,3 +6,4 @@ export * from './_interceptors/http-error.interceptor';
 export * from './_interceptors/cosmic.interceptor';
 export * from './_services/analytics.service';
 export * from './_services/cosmic.service';
+export * from './_services/favicon.service';

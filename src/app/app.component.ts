@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { CosmicService, AnalyticsService } from './core';
+import { CosmicService, AnalyticsService, FaviconService } from './core';
 import { Title } from '@angular/platform-browser';
-import { FaviconService } from './core/_services/favicon.service';
+import { environment } from '@environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -31,7 +31,9 @@ export class AppComponent implements OnInit {
         this.footerNavigationID = presets.footerNavigation._id;
       }
 
-      // if analytics, set UA and start the service
+      if (environment.production && presets.trackingID) {
+        this.analyticsService.initialize(presets.trackingID);
+      }
     });
   }
 }

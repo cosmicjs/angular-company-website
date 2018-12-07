@@ -18,8 +18,6 @@ Once you've got your CosmicJS App created, fill the data on the `environment` fi
 ```
 The `cosmic interceptor` will make sure to send the read and write keys when communicating with the CMS.
 
-If you're integrating Google Analytics, modify the `index.html` with your UA identifier.
-
 ## About the project
 
 ### Structure
@@ -38,7 +36,7 @@ The `Pages` module will sit at the root path: virtually, any URL could be a `pag
 
 `cosmic service` has cache implemented so the API consumption is reduced to a minimum.
 
-`analytics service` will automatically send pageviews to Google Analytics. UA has to be manually set on `index.html`
+`analytics service` will automatically send pageviews of your production instance to Google Analytics. The tracking ID has to be set on the presets.
 
 ## Thanks
 

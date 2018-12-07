@@ -9,8 +9,12 @@ declare var ga: Function;
   providedIn: 'root'
 })
 export class AnalyticsService {
-  constructor(router: Router) {
-    router.events.subscribe(event => {
+  constructor(private router: Router) {}
+
+  initialize(ua: string) {
+    ga('create', ua, 'auto');
+
+    this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         ga('set', 'page', event.url);
         ga('send', 'pageview');

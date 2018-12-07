@@ -11,6 +11,7 @@ export class Preset {
   mainNavigation: Navigation;
   slug: string;
   title: string;
+  trackingID: string;
 
   constructor(obj) {
     this._id = obj._id;
@@ -21,6 +22,7 @@ export class Preset {
     this.mainNavigation = new Navigation(obj.metadata.main_navigation);
     this.slug = obj.slug;
     this.title = obj.title;
+    this.trackingID = obj.metadata.tracking_id ? obj.metadata.tracking_id : '';
 
     if (obj.metadata.footer_navigation) {
       this.footerNavigation = new Navigation(obj.metadata.footer_navigation);
