@@ -6,6 +6,9 @@ import { catchError, map, tap, switchMap, shareReplay, share } from 'rxjs/operat
 import { environment } from '@environments/environment';
 import { Navigation, Page, Preset, ExternalLink } from '../_model';
 
+/**
+ * A service to get data from CosmicJS.
+ */
 @Injectable({
   providedIn: 'root'
 })

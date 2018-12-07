@@ -2,6 +2,9 @@ import { Injectable } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 declare var ga: Function;
 
+/**
+ * A service to send events to Google Analytics.
+ */
 @Injectable({
   providedIn: 'root'
 })

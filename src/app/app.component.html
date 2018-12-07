@@ -3,15 +3,19 @@
 <router-outlet></router-outlet>
 
 <footer class="footer">
-  <div class="columns">
-      <div class="column">
-          <app-external-links></app-external-links>
-      </div>
-      <div class="column">
-          <app-navigation-links [navigationID]="footerNavigationID"></app-navigation-links>
-      </div>
-  </div>
-  <p>
-    Made with love using Angular, Bulma and CosmicJS
-  </p>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <app-external-links></app-external-links>
+                </div>
+                <div class="column">
+                    <app-navigation-links [navigationID]="footerNavigationID"></app-navigation-links>
+                </div>
+            </div>
+            <p>
+              Made with love using Angular, Bulma and CosmicJS
+            </p>
+        </div>
+      </section>
 </footer>
