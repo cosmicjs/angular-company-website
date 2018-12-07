@@ -32,7 +32,7 @@ If you're integrating Google Analytics, modify the `index.html` with your UA ide
 
 ### Route management
 
-The `Pages` module will sit at the root path: virtually, any URL could be a `page` requested to the CMS. If there is no `page` specified (eg: when the user hits the root URL) then the `homepage guard` will get the default page from the `presets`. If the URL specified doesn't match any known `page` on the CMS, the `http-error interceptor` will intercept the 404 error and redirect accordingly.
+The `Pages` module will sit at the root path: virtually, any URL could be a `page` requested to the CMS. If there is no `page` specified (e.g., when the user hits the root URL), then the `homepage guard` will get the default page from the `presets`. If the URL specified doesn't match any known `page` on the CMS, the `http-error interceptor` will intercept the 404 error and redirect accordingly.
 
 ### Features
 
