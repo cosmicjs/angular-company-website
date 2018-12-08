@@ -1,6 +1,6 @@
 <ul *ngIf="links">
   <li *ngFor="let link of links">
-    <a href="{{link.url}}" class="link">
+    <a href="{{link.url}}" class="link" target="_blank">
       <span class="image is-32x32">
         <ng-container *ngIf="link.icon">
           <img src="{{link.icon}}"/>
