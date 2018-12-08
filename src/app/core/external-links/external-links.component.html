@@ -1,7 +1,7 @@
 <ul *ngIf="links">
   <li *ngFor="let link of links">
-    <a href="{{link.url}}">
-      <span class="image is-16x16">
+    <a href="{{link.url}}" class="link">
+      <span class="image is-32x32">
         <ng-container *ngIf="link.icon">
           <img src="{{link.icon}}"/>
         </ng-container>
