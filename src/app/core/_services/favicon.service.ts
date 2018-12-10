@@ -1,5 +1,6 @@
 import { Injectable, Inject } from '@angular/core';
-import { DOCUMENT, ɵgetDOM as getDOM } from '@angular/platform-browser';
+import { DOCUMENT } from '@angular/common';
+import { ɵgetDOM as getDOM } from '@angular/platform-browser';
 
 /**
  * A service to set the favicon.
