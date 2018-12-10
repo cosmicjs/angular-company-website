@@ -13,8 +13,10 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~7.1.1",
+    "@angular/cli": "^7.1.1",
     "@angular/common": "~7.1.1",
     "@angular/compiler": "~7.1.1",
+    "@angular/compiler-cli": "~7.1.1",
     "@angular/core": "^7.1.1",
     "@angular/forms": "~7.1.1",
     "@angular/http": "~7.1.1",
@@ -28,8 +30,6 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.11.1",
-    "@angular/cli": "^7.1.1",
-    "@angular/compiler-cli": "~7.1.1",
     "@angular/language-service": "~7.1.1",
     "@types/jasmine": "~3.3.1",
     "@types/jasminewd2": "~2.0.3",
