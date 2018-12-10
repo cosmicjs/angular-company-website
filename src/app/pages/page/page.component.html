@@ -20,7 +20,7 @@
     </ng-container>
   </section>
   <section class="section">
-    <div class="container is-size-4" [innerHTML]="page.content">
+    <div class="container is-size-4" [innerHTML]="page.content | trustContentFromCosmic">
     </div>
   </section>
 </ng-container>

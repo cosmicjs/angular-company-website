@@ -28,6 +28,8 @@ The `cosmic interceptor` will make sure to send the read and write keys when com
 
 * `Pages` module is a lazy loaded module that contain the components to show the content pulled from the CMS. It's essentially the body of the website.
 
+* `Shared` module contains elements that can be reused on any other module. It holds a pipe to allow HTML content pulled from the CMS to bypass sanitization.
+
 ### Route management
 
 The `Pages` module will sit at the root path: virtually, any URL could be a `page` requested to the CMS. If there is no `page` specified (e.g., when the user hits the root URL), then the `homepage guard` will get the default page from the `presets`. If the URL specified doesn't match any known `page` on the CMS, the `http-error interceptor` will intercept the 404 error and redirect accordingly.
