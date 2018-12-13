@@ -8,6 +8,8 @@
     "start": "npm run config && ng serve",
     "start-prod": "npm run config -- --environment=prod && ng serve",
     "build": "ng build",
+    "compile": "npm run config && ng build",
+    "compile-prod": "npm run config -- --environment=prod && ng build --prod --aot",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
