@@ -5,7 +5,7 @@
     "config": "ts-node ./set-env.ts",
     "ng": "ng",
     "serve": "ng serve",
-    "start": "npm run config && ng serve",
+    "start": "npm run config && ng serve --port $PORT",
     "start-prod": "npm run config -- --environment=prod && ng serve",
     "build": "ng build",
     "compile": "npm run config && ng build",
