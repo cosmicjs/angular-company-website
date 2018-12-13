@@ -10,13 +10,17 @@ Once you've got your CosmicJS App created, fill the data on the `environment` fi
   production: true|false,
   read_key: 'COSMIC_READ_KEY',
   write_key: 'COSMIC_WRITE_KEY',
-  bucket_id: 'BUCKET_ID',
   bucket_slug: 'BUCKET_SLUG',
   URL: 'https://api.cosmicjs.com/v1/',
   presets: 'YOUR_PRESETS_OBJECT_SLUG'
 }
 ```
 The `cosmic interceptor` will make sure to send the read and write keys when communicating with the CMS.
+
+You can also run the following command to quickstart the application:
+```
+COSMIC_BUCKET=your-bucket-slug COSMIC_READ_KEY=your-bucket-read-key npm start
+```
 
 ## About the project
 

@@ -2,8 +2,11 @@
   "name": "company-presentation",
   "version": "0.0.0",
   "scripts": {
+    "config": "ts-node ./set-env.ts",
     "ng": "ng",
-    "start": "ng serve",
+    "serve": "ng serve",
+    "start": "npm run config && ng serve",
+    "start-prod": "npm run config -- --environment=prod && ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -27,6 +30,7 @@
     "bulma": "^0.7.2",
     "core-js": "^2.5.4",
     "rxjs": "~6.3.3",
+    "yargs": "^12.0.5",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
