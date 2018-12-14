@@ -8,13 +8,13 @@ This repository showcases the use of Angular with [Cosmic JS](cosmicjs.com), a h
 ## How to install
 Install via the Cosmic JS website to import demo content:
 https://cosmicjs.com/apps/angular-company-website
+
+Install the code locally:
 ```
 git clone https://github.com/cosmicjs/angular-company-website
-cd angular-company-website
-COSMIC_BUCKET=your-bucket-slug COSMIC_READ_KEY=your-bucket-read-key npm start
 ```
 
-Once you've got your Cosmic JS App created, fill the data on the `environment` files as follows:
+Once you've got your Cosmic JS Bucket installed, fill the data on the `environment` files as follows:
 ```
 {
   production: true|false,
