@@ -1,6 +1,9 @@
 # Angular Company Website
 
-This repository showcases the use of Angular with [CosmicJS](cosmicjs.com), a headless CMS service, to create a simple yet flexible website for a company, freelance, etc. Bulma has been chosen as the CSS framework due to its simplicity.
+![Angular Company Website](https://cosmic-s3.imgix.net/6bdb6590-ffc9-11e8-9a9c-8b349df2e2bf-smartmockups_jpoc1svl.jpg?w=1200)
+### [View Demo](https://cosmicjs.com/apps/angular-company-website)
+
+This repository showcases the use of Angular with [Cosmic JS](cosmicjs.com), a headless CMS service, to create a simple yet flexible website for a company, freelance, etc. Bulma has been chosen as the CSS framework due to its simplicity.
 
 ## How to start
 
