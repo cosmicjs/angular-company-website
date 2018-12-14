@@ -6,7 +6,7 @@
 This repository showcases the use of Angular with [Cosmic JS](cosmicjs.com), a headless CMS service, to create a simple yet flexible website for a company, freelance, etc. Bulma has been chosen as the CSS framework due to its simplicity.
 
 ## How to install
-Install via the Cosmic JS Website to import demo contet:
+Install via the Cosmic JS website to import demo content:
 https://cosmicjs.com/apps/angular-company-website
 ```
 git clone https://github.com/cosmicjs/angular-company-website
