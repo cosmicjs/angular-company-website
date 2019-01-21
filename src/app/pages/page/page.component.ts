@@ -27,8 +27,7 @@ export class PageComponent implements OnInit {
   setBackground() {
     if (this.page.banner) {
       const styles: Object = {
-        background: `url(${this.page.banner}) no-repeat center center`,
-        'background-size': 'cover'
+        background: `url(${this.page.banner}) center center / cover no-repeat`
       };
       return styles;
     } else {
